@@ -1,5 +1,5 @@
 // filename: main.rs
-// this code calls the libmpu6050.a library to collect accelerometer data
+// this code calls the libadxl345.a library to collect accelerometer data
 use log::{error, warn, info, debug, trace};
 unsafe extern "C" {
     fn square(x: i32) -> i32;

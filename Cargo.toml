@@ -1,5 +1,5 @@
 [package]
-name = "mpu6050"
+name = "adxl345"
 version = "0.1.0"
 edition = "2024"
 
