@@ -1,10 +1,10 @@
 // filename: build.rs
-// This file creates a static archive libmpu6050.a.
-// libmpu6050.a provides an API used by main.rs to interact with the mpu6050 device
+// This file creates a static archive libadxl345.a.
+// libadxl345.a provides an API used by main.rs to interact with the adxl345 device
 
 fn main() {
-    println!("cargo::rerun-if-changed=src/mpu6050.c");
+    println!("cargo::rerun-if-changed=src/adxl345.c");
     cc::Build::new()
-        .file("src/mpu6050.c")
-        .compile("mpu6050");
+        .file("src/adxl345.c")
+        .compile("adxl345");
 }
