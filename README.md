@@ -1,11 +1,7 @@
 ## ADXL345
 
 This code reads accelerometer data from an [ADXL345](https://www.adafruit.com/product/1231?srsltid=AfmBOor_9QODrvvVQmg_ze4qzYp7RrGCFvxcl0hvC4oOAOO5H5hRJ3ZV) from user-space using Rust.
-
-<video width="640" controls>
-  <source src="assets/videos/adxl345_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![adxl demo here](assets/videos/adxl345_demo.gif.gif)
 
 ## Code Structure
 
