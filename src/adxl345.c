@@ -1,7 +1,7 @@
 /**
 * filename: adxl345.c
-* This is the implementation libadxl345.a which is a C-API
-* that allows `src.main.rs` to interact with the ADXL345 sensor
+* This is the implementation of libadxl345.a which is a C-API
+* that allows `src/main.rs` to interact with the ADXL345 sensor
 * To compile locally:
 *    gcc adxl345.c -D RUN_C -o adxl345
 */
