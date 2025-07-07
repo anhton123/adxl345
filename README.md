@@ -2,6 +2,8 @@
 
 This code reads accelerometer data from an [ADXL345](https://www.adafruit.com/product/1231?srsltid=AfmBOor_9QODrvvVQmg_ze4qzYp7RrGCFvxcl0hvC4oOAOO5H5hRJ3ZV) from user-space using Rust.
 
+![](assets/videos/adxl345_demo.mp4)
+
 ## Code Structure
 
 This code is divided into the following:
