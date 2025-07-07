@@ -1,6 +1,10 @@
-// C API to interact with ADXL345 through reading user-space device file
-// compile locally:
-//     gcc adxl345.c -D RUN_C -o adxl345
+/**
+* filename: adxl345.c
+* This is the implementation libadxl345.a which is a C-API
+* that allows `src.main.rs` to interact with the ADXL345 sensor
+* To compile locally:
+*    gcc adxl345.c -D RUN_C -o adxl345
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,7 +21,7 @@ int adxl345_init() {
 	/* get fd of I2C bus */
 	if ((fd = open(I2C_BUS, O_RDWR)) < 0) {
 		printf("ERROR: Failed to open the bus. \n");
-		exit(1);
+		return -1;
 	}
 	
 	/* make fd a I2C slave */
@@ -96,6 +100,11 @@ int main()
 	}
 	
 	fd = adxl345_init();
+	if (fd == -1) {
+		printf("ERROR: unable to open i2c bus\n");
+		exit(1);
+	}
+
 	for (int i=0; i<num_samples; i++) {
 		adxl345_get_accel(fd, accl);
 		printf("-----------------------------\n");

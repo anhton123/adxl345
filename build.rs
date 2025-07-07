@@ -1,6 +1,8 @@
-// filename: build.rs
-// This file creates a static archive libadxl345.a.
-// libadxl345.a provides an API used by main.rs to interact with the adxl345 device
+/**
+* filename: build.rs
+* This file creates the static archive libadxl345.a which provides an API
+* for `src/main.rs` to interface with with the ADXL345 accelerometer
+*/
 
 fn main() {
     println!("cargo::rerun-if-changed=src/adxl345.c");

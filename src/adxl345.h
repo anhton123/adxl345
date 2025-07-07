@@ -1,4 +1,3 @@
-
 /**
 * Bus that the ADXL345 is attached to
 */
@@ -8,14 +7,6 @@
 * I2C address of ADXL345
 */
 #define I2C_ADDR (0x53)
-
-/**
-* Calulates square of number
-* @param[in] x: input number
-* @return square of number 
-*/
-int square(int x); 
-
 
 /**
 * Struct to hold acceleromoter data

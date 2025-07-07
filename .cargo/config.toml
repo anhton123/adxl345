@@ -1,4 +1,4 @@
 # filename: config.toml
 # Defines all environment variables using when running `cargo` command
 [env]
-RUST_LOG = "trace"
+RUST_LOG = "debug"
